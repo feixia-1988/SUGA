@@ -1,0 +1,16 @@
+ublic class tt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+				System.out.println("计算圆的面积和周长");
+			     double radius = 5.5;
+			     double c;
+			     double area;
+			    double  pi = 3.14159;
+			     c = 2 * radius * pi;
+			     area = radius * radius * pi;
+				System.out.println("The area is " + area + " for radius is " + radius);
+				System.out.println("周长是 " + c);
+	}
+
+}
