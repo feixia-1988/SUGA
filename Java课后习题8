@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class yy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final double PI=3.14159;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a number for redius: ");
+		double redius = input.nextDouble();
+		double area = redius * redius * PI;
+		System.out.println("The area for the circle of redius " + redius +" is " + area);
+	}
+}
