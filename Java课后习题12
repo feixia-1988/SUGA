@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class yy {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int m = input.nextInt();
+		int r = input.nextInt();
+		double t,k,l;
+		t = m / 1.0;
+		k = r / 1.0;
+		l = t * k * k;
+		System.out.println("l is: " + l);
+	}
+}
