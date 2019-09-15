@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class yy {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter the subtotal and a gratuity rate: ");
+		double subtotal = input.nextDouble();
+		double gratuity = input.nextDouble();
+		gratuity = gratuity / 100 * subtotal;
+		double Gratuity = gratuity + subtotal;
+		System.out.println("The gratuity is $" + gratuity + " and total is $" + Gratuity);
+	}
+} 
