@@ -1,0 +1,17 @@
+public class yy {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double a = 6.5;
+		a++;
+		System.out.println(a);
+		a = 6;
+		--a;
+		System.out.println(a);
+		a = 6;
+		a--;
+		System.out.println(a);
+		a = 6;
+		++a;
+		System.out.println(a);
+	}
+}
