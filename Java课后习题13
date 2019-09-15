@@ -1,0 +1,9 @@
+public class yy {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Scanner input = new Scanner(System.in);
+		System.out.println("二进制0B111 is: " + 0B1111);
+		System.out.println("八进制07777 is: " + 07777);
+		System.out.println("十六进制0xFFFF is: " + 0xFFFF);
+	}
+}
