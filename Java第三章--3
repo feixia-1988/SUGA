@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class AdditionQuiz {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int T = 2;
+		while(T > 0) {
+			T--;
+		Scanner input = new Scanner(System.in);
+		int score = input.nextInt();
+		double pay;
+		if(score >90)
+			pay = (1 + 0.03) * score;
+		else
+			pay = (1 + 0.01) * score;
+		System.out.println("You should pay; " + pay);
+		}
+	}
+}
