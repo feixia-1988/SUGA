@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class SubtractionQuiz {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int T = 9;
+		while(T>0) {
+			T--;
+		//Generate two random single-digit integers
+		//指定随机数的范围
+			int max =26;
+			int min = 23;
+		int number1 = min + (int)(Math.random() * ((max - min) + 1));
+		int number2 = min + (int)(Math.random() * ((max - min) + 1));
+		//如果number1 < number2,交换两个数的位置
+		if(number1 < number2)
+		{
+			int temp = number1;
+			number1 = number2;
+			number2 = temp;
+		}
+		//回答问题
+		System.out.println("What is " + number1 + " - " + number2 + "?");
+		Scanner input = new Scanner(System.in);
+		int answer = input.nextInt();
+		//判断结果是否正确
+		if(answer == number1 - number2)
+			System.out.println("you ara correct!");
+		else
+		{
+			System.out.println("your answer is wong!");
+		int k = number1 - number2;
+		System.out.println("The answer should be  " + k);
+		}
+		}
+	}
+}
