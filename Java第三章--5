@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class AdditionQuiz {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int T = 2;
+		while(T > 0) {
+			T--;
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();
+		boolean n = number % 2 ==0;
+			System.out.println(n);
+		}
+	}
+}
