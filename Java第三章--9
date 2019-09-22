@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class ComputeTax {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//输入一个整数
+		System.out.print("Enter a integer: ");
+		Scanner input = new Scanner(System.in);
+		 int a = input.nextInt();
+		 //判断
+		 if(a % 2 == 0 && a % 3 == 0)
+			 System.out.println(a + "is divisible by 2 and 3.");
+		 if(a % 2 == 0 || a % 3 == 0)
+			 System.out.println(a + "is divisible by 2 or 3.");
+		 if(a % 2 == 0 ^ a % 3 == 0)
+			 System.out.println(a + "is divisible by 2 or 3,but not both.");
+	}
+}
