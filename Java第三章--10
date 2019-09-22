@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Leapyear {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int yaer = input.nextInt();
+		boolean Leapyear=(yaer % 4 == 0 && yaer % 100 != 0) ||(yaer % 400 ==0);
+			System.out.println(yaer + " is a leapyear? " + Leapyear);
+	}
