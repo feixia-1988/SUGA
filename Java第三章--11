@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Lottery {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//产生一个两位数的整数
+		int lottery = (int)(Math.random() * 100);
+		//输入一个你猜测的数
+		Scanner input = new Scanner(System.in);
+		int guess = input.nextInt();
+		//将数字分解
+		int lotteryDigit1 = lottery % 10;
+		int lotteryDigit2 = lottery / 10;
+		int guessDigit1 = guess % 10;
+		int guessDigit2 = guess / 10;
+		int s = 0;
+		//判断情况
+		if(lotteryDigit1 == guessDigit1 && lotteryDigit2 == guessDigit2)
+			s = 1;
+		else if(lotteryDigit1 == guessDigit2 && lotteryDigit2 == guessDigit1)
+			s = 2;
+		else if(lotteryDigit1 == guessDigit1 || lotteryDigit2 == guessDigit2 || lotteryDigit1 == guessDigit2 || lotteryDigit2 == guessDigit1)
+			s = 3;
+		else
+			s = 4;
+		if(s == 1)
+			System.out.println("Exact match: you win $10,000");
+		if(s == 2)
+			System.out.println("Match all digits: you win $3,000");
+		if(s == 3)
+			System.out.println("Match one digit: you win $10,000");
+		if(s == 4)
+			System.out.println("Sorry,no match");
+	}
+
+}
