@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class suga {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char i =(char)(97 + Math.random() * 26);
+		System.out.println(i);
+	}
+}
