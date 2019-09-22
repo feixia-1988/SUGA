@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Lottery {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//产生一个两位数的整数
+		int lottery = (int)(Math.random() * 52);
+		int a = lottery % 4;
+		int b = lottery / 4;
+		System.out.print("The card you pick is ");
+		if(b == 1)
+			System.out.print("Ace ");
+		else if(b >= 2 && b <=10)
+			System.out.print(b);
+		else if(b == 11)
+			System.out.print(" Jack ");
+		else if(b == 12)
+			System.out.print(" Queen ");
+		else if(b == 13)
+			System.out.print(" King ");
+			System.out.print(" of ");
+		if(a == 1)
+			System.out.print("Diamonds");
+		else if(a == 2)
+			System.out.print("Heart");
+		else if(a == 3)
+			System.out.print("Spades");
+		else
+			System.out.print("Clubs");
+	}
+}
