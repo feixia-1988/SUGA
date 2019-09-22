@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class suga {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		//输入字符串
+		System.out.println("Enter a line is: ");
+		String s1 = input.nextLine();//读入一行字符串
+		System.out.println("The line entered is " + s1);
+		//输入你想要读取的位置
+		char ch = s1.charAt(0);
+		System.out.println(ch);
+	}
+}
