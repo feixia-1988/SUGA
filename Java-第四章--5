@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class suga {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		//输入三行字符串
+		String s1 = input.nextLine();
+		String s2 = input.nextLine();
+		String s3 = input.nextLine();
+		//判断是否内容相等
+		System.out.println(s1.equals(s2));
+		System.out.println(s3.equals(s2));
+	}
+}
