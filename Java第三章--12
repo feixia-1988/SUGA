@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class gen {
+
+	public static void main(String[] args) {
+		int T = 3;
+		// TODO Auto-generated method stub
+		while(T > 0) {
+		//输入三个数a,b,c;
+		System.out.print("Enter three numbers of a,b,c: ");
+		Scanner input = new Scanner(System.in);
+		double a= input.nextDouble();
+		double b = input.nextDouble();
+		double c = input.nextDouble();
+		//判断根的值
+		double k = b * b - 4 * a * c;
+	    double k1 = 0;
+	    double k2 = 0;
+		if(k > 0)
+		{//求出两个根分别是什么
+			k1 = (Math.pow(b * b - 4 * a * c,0.5 ) - b) / 2 *a;
+		    k2 = (0 -Math.pow(b * b - 4 * a * c,0.5 ) - b) / 2 *a;
+			System.out.print("The equation has two roots  " + k1 + " and " + k2);
+		}
+		else if(k == 0)
+		{
+			k1 =(0 - b) / 2 *a;
+		System.out.print("The equation has one roots  " + k1);
+	}
+		else
+			System.out.print("The equation has no real roots");
+		T--;
+		}
+	}
+}
