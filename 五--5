@@ -1,0 +1,38 @@
+package susu;
+//用do-while实现
+import java.util.Scanner;
+public class vvvvv {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int sum = 0,num;
+		do{
+			System.out.println("Enter an integer " + "(the input ends if it is 0)");
+			num = input.nextInt();
+			sum += num;
+		}while(num != 0);
+		System.out.println("sum is " + sum);
+		System.out.println("num is " + num);
+	}
+}
+//用while实现
+ackage susu;
+import java.util.Scanner;
+public class vvvvv {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int sum = 0,num;
+		num = input.nextInt();
+		while(num != 0) {
+			sum += num;
+			System.out.println("Enter an integer " + "(the input ends if it is 0)");
+			num = input.nextInt();
+		}
+		System.out.println("sum is " + sum);
+		System.out.println("num is " + num);
+	}
+
+}
