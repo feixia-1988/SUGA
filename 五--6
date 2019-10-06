@@ -1,0 +1,19 @@
+package susu;
+import java.util.Scanner;
+public class vvvvv {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int num,max;
+		num = input.nextInt();
+		max = num;
+		do {
+			num = input.nextInt();
+			if(num > max)
+				max = num;
+		}while(num != 0);
+		System.out.println("max is " + max);
+		System.out.println("num is " + num);
+	}
+}
