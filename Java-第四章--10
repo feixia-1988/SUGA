@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class daying {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int line = input.nextInt();
+		int i,j;
+		for(i=0;i<line;i++) {
+			for(j=0;j<2 * line;j++) {
+			if(j>=line-i&&j<=line + i) 
+			{
+				System.out.printf("%d", 1+Math.abs(line-j));
+			}
+			else
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
