@@ -1,0 +1,19 @@
+
+public class TestPrintf { 
+
+public static void main(String[] args) { 
+
+//定义一些变量，用来格式化输出。 
+
+double d = 345.678; 
+
+String s = "你好！"; 
+
+int i = 1234; 
+
+//"%"表示进行格式化输出，"%"之后的内容为格式的定义。 
+
+System.out.printf("%f",d); //"f"表示格式化输出浮点数。 
+
+System.out.println(); 
+
