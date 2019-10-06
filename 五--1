@@ -1,0 +1,15 @@
+public class chepaihao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//生成随机的三个字母
+		int k1 =65 + (int)(Math.random()*26);
+		int k2 =65 + (int)(Math.random()*26);
+		int k3 =65 + (int)(Math.random()*26);
+		System.out.printf("%c%c%c", k1,k2,k3);
+		//生成随机四位数
+		int k4 =1000 + (int)(Math.random()*8999);
+		System.out.println(k4);
+	}
+
+}
