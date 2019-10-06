@@ -1,0 +1,38 @@
+public class paixu {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		//String s4;
+		System.out.println("Enter the first city: ");
+		String s1 = input.nextLine();
+		System.out.println("Enter the second city: ");
+		String s2 = input.nextLine();
+		System.out.println("Enter the third city: ");
+		String s3 = input.nextLine();
+		if(s1.compareTo(s2)>0)
+		{
+			if(s1.compareTo(s3)>0) {
+				if(s2.compareTo(s3)>0) 
+					System.out.println("The three cities in alphabetial order are " + s1 + " " + s2 + " " + s3);
+				else
+					System.out.println("The three cities in alphabetial order are " + s1 + " " + s3 + " " + s2);
+			}
+			else
+				System.out.println("The three cities in alphabetial order are " + s3 + " " + s1 + " " + s2);
+		}
+		else//s1<s2
+		{
+			if(s1.compareTo(s3)>0)
+					System.out.println("The three cities in alphabetial order are " + s2 + " " + s1 + " " + s3);
+			else{//s1<s3
+				if(s2.compareTo(s3)<0)
+					System.out.println("The three cities in alphabetial order are " + s3 + " " + s2 + " " + s1);
+				else
+					System.out.println("The three cities in alphabetial order are " + s2 + " " + s3 + " " + s1);	
+			}
+		}
+			
+	}
+
+}
