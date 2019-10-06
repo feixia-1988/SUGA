@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class suga {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner input= new Scanner(System.in);
+		System.out.print("Enter the radius of the bounding circle: ");
+		int circle = input.nextInt();
+		System.out.println("The coordinates of five points on the pentagon are");
+		System.out.println(0 + "," + circle);
+		System.out.println(-circle * Math.sin(Math.toRadians(72)) + " , " + circle * Math.cos(Math.toRadians(72)));
+		System.out.println(circle * Math.sin(Math.toRadians(72)) + " , " + circle * Math.cos(Math.toRadians(72)));
+		System.out.println(-circle * Math.sin(Math.toRadians(36)) + " , " + (-circle * Math.cos(Math.toRadians(36))));
+		System.out.println(circle * Math.sin(Math.toRadians(36)) + " , " + (-circle * Math.cos(Math.toRadians(36))));
+	}
+
+}
