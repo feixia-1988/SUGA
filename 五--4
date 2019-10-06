@@ -1,0 +1,17 @@
+package susu;
+import java.util.Scanner;
+public class vvvvv {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int num, sum = 0,count;
+		for(count = 0 ; count < 5;count++) {
+			num = input.nextInt();
+			sum += num;
+		}
+		System.out.println("sum is " + sum);
+		System.out.println("count is " + count);
+	}
+
+}
