@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Location {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Great a Scanner
+		 Scanner input = new Scanner(System.in);
+		 //Enter array value;
+		int row,column;
+		System.out.print("Enter the number of rows and columns in the array:");
+		row = input.nextInt();
+		column = input.nextInt();
+		double [][] m = new double[row][column];
+		for(int i = 0;i<row;i++){
+			for(int j = 0;j<column;j++){
+				m[i][j] = input.nextDouble();
+			}
+			//System.out.printf("\n");
+		}
+		//Found the maxNumber;
+		double maxValue = m[0][0];
+		int g=0,h=0;
+		
+		for(int i = 0;i<row;i++){
+			for(int j = 0;j<column;j++){
+				if(m[i][j]>maxValue)
+				{
+					maxValue = m[i][j];
+					g=i;
+					h=j;
+				}
+			}
+		}
+		System.out.println("Maxvalue is " + maxValue + " at(" + g + " " + h + ")");
+	}
+}
+	
